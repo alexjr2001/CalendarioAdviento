@@ -1,0 +1,19 @@
+{
+  "name": "adventskalender-platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "calendar:create": "node scripts/create-calendar.mjs",
+    "calendar:rotate-token": "node scripts/rotate-editor-token.mjs"
+  },
+  "dependencies": {
+    "@next/env": "^15.5.4",
+    "@supabase/supabase-js": "^2.58.0",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

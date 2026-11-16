@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1b2a" />
+  <title>24 momentos para ti</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="snow" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <audio id="christmasMusic" loop preload="auto">
+    <source src="musik/LetItSnow.mp3" type="audio/mpeg" />
+  </audio>
+
+  <header>
+    <div class="eyebrow" id="yearLabel">Diciembre · 2026</div>
+    <h1>24 momentos<br>para ti.</h1>
+    <p class="intro">Un pequeño ritual para hacer más bonita la espera. Abre una puerta cada día y guarda ese momento.</p>
+    <div class="memory-gallery">
+      <button class="memory-photo" id="memoryPhoto" type="button" aria-label="Mostrar la siguiente foto de recuerdo">
+        <img id="memoryImage" src="" alt="Foto de recuerdo" />
+      </button>
+      <div class="memory-dots" id="memoryDots" aria-label="Posición en la galería de fotos"></div>
+      <div class="memory-names" id="memoryNames">Name 1 &amp; Name 2</div>
+      <section class="scratch-section" aria-labelledby="scratchTitle">
+        <div class="section-rule" aria-hidden="true"></div>
+        <h2 id="scratchTitle">Fueron los momentos más bonitos...</h2>
+        <p class="scratch-hint">Rasca los círculos para descubrirlo</p>
+        <div class="scratch-row" id="scratchCards"></div>
+        <p class="scratchTitle"><span>de mi vida.</span></p>
+      </section>
+    </div>
+    <div class="topbar">
+      <div class="status" id="status">Preparando diciembre...</div>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">♫ Música desactivada</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid" id="calendar" aria-label="Calendario de Adviento"></section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <article class="modal">
+      <button class="close" id="closeModal" type="button" aria-label="Cerrar regalo">×</button>
+      <div id="mediaSlot"></div>
+      <div class="modal-copy">
+        <span id="modalKicker"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+      </div>
+    </article>
+  </div>
+
+  <script src="site-config.js"></script>
+  <script src="calendar-data.js"></script>
+  <script src="calendar.js"></script>
+</body>
+</html>
