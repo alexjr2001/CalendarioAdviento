@@ -1,4 +1,5 @@
 .activity-section[hidden] { display: none !important; }
+.buy-fab-group[hidden] { display: none !important; }
 .buy-fab-group { position: fixed; right: 18px; bottom: 18px; z-index: 30; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
 .buy-fab { padding: 12px 20px; border: 1px solid rgba(255,255,255,.35); border-radius: 99px; color: #20190f; background: linear-gradient(145deg,#f3cf86,#e6bd72); font: 700 .82rem 'DM Sans',sans-serif; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; box-shadow: 0 10px 26px rgba(0,0,0,.35); transition: transform .2s, filter .2s; }
 .buy-fab-secondary { color: var(--cream); background: rgba(20,16,10,.78); border-color: rgba(230,189,114,.55); backdrop-filter: blur(4px); }

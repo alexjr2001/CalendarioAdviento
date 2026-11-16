@@ -1,3 +1,8 @@
+const isCalendarDemo = !new URLSearchParams(window.location.search).get('calendar');
+document.querySelectorAll('.buy-fab-group').forEach(group => {
+  group.hidden = !isCalendarDemo;
+});
+
 window.calendarDataReady.then(calendarConfig => {
   setupScratch(calendarConfig);
 });
